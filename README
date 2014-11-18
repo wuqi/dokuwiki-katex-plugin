@@ -12,6 +12,17 @@ will not work!
 Please refer to http://www.dokuwiki.org/plugins for additional info
 on how to install plugins in DokuWiki.
 
+### Syntax and Usage
+
+Inline:
+
+  <math>a^2 + b^2 = c^2</math>
+
+Block:
+
+  <math block>a^2 + b^2 = c^2</math>
+
+在配置中可以修改katex的网址，katex显示比较弱，还在修改中，只能说基本够用了.主要是快。
 ----
 Copyright (C) wuqi <wuqi198772@gmail.com>
 

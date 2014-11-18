@@ -1,0 +1,7 @@
+base   katex
+author wuqi
+email  wuqi198772@gmail.com
+date   2014-11-18
+name   katex plugin
+desc   Enables katex (http://khan.github.io/KaTeX/) parsing of TeX math expressions in wiki pages
+url    https://bitbucket.org/wuqi/dokuwiki-katex-plugin

@@ -5,5 +5,5 @@
  * @author wuqi <wuqi198772@gmail.com>
  */
 
-$conf['jslink'] = 'http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js';
-$conf['csslink'] = 'http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css';
+$conf['jslink'] = 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js';
+$conf['csslink'] = 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css';

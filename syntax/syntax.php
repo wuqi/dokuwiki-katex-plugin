@@ -49,7 +49,7 @@ class syntax_plugin_katex_syntax extends DokuWiki_Syntax_Plugin {
             switch ($state) {
                 case DOKU_LEXER_ENTER : 
                     list($math,$disp) = $match;  
-                    $renderer->doc .= '<span class="math" style="display:'.$disp.';">\displaystyle '; 
+                    $renderer->doc .= '<span class="math" >'; 
                     break;
  
                 case DOKU_LEXER_UNMATCHED :  

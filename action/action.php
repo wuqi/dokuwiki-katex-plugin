@@ -48,7 +48,7 @@ class action_plugin_katex_action extends DokuWiki_Action_Plugin {
         $event->data["script"][] = array (
           "type" => "text/javascript",
           "charset" => "utf-8",
-          "_data" => 'document.onreadystatechange=function(){if(document.readyState=="complete"){var elements=document.getElementsByClassName("math").firstChild;for(var i=0,length=elements.length;i<length;i++){var content=elements[i].innerHTML;try{katex.render(content,elements[i])}catch(err){elements[i].innerHTML="<span class=\"err\">"+err}}}}',
+          "_data" => 'document.onreadystatechange=function(){if(document.readyState=="complete"){var elements=document.getElementsByClassName("math");for(var i=0,length=elements.length;i<length;i++){var content=elements[i].firstChild.innerHTML;try{katex.render(content,elements[i].firstChild)}catch(err){elements[i].firstChild.innerHTML="<span class=\"err\">"+err}}}}',
         );
     }
 

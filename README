@@ -2,9 +2,6 @@ katex Plugin for DokuWiki
 
 Enables katex (http://khan.github.io/KaTeX/) parsing of TeX math expressions in wiki pages,it's faster than MathJax.
 
-All documentation for this plugin can be found at
-http://www.dokuwiki.org/plugin:katex
-
 If you install this plugin manually, make sure it is installed in
 lib/plugins/katex/ - if the folder is called different it
 will not work!

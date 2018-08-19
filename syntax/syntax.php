@@ -13,8 +13,8 @@ class syntax_plugin_katex_syntax extends DokuWiki_Syntax_Plugin {
     /**
      * @return string Syntax mode type
      */
-    public function getType(){ return 'formatting'; }
-    public function getAllowedTypes() { return array('formatting', 'substition', 'disabled'); }   
+    public function getType(){ return 'protected'; }
+    public function getAllowedTypes() { return array('protected'); }   
     public function getSort(){ return 158; }
     public function connectTo($mode) { $this->Lexer->addEntryPattern('<math.*?>(?=.*?</math>)',$mode,'plugin_katex_syntax'); }
     public function postConnect() { $this->Lexer->addExitPattern('</math>','plugin_katex_syntax'); }

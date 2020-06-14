@@ -23,7 +23,7 @@ class syntax_plugin_katex_syntax extends DokuWiki_Syntax_Plugin {
     /**
      * Handle the match
      */
-    public function handle($match, $state, $pos, Doku_Handler &$handler){
+    public function handle($match, $state, $pos, Doku_Handler $handler){
         switch ($state) {
           case DOKU_LEXER_ENTER :
                 //list($color, $background) = preg_split("/\//u", substr($match, 6, -1), 2);
@@ -41,7 +41,7 @@ class syntax_plugin_katex_syntax extends DokuWiki_Syntax_Plugin {
     /**
      * Create output
      */
-    public function render($mode, &$renderer, $data) {
+    public function render($mode,Doku_Renderer $renderer, $data) {
         // $data is what the function handle() return'ed.
         if($mode == 'xhtml'){
             /** @var Doku_Renderer_xhtml $renderer */
